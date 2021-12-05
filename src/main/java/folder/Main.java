@@ -48,7 +48,7 @@ public class Main {
         long r = code.apply(num);
         long time = System.currentTimeMillis() - start;
         results.computeIfAbsent(name, k -> new LinkedList<>()).add(time);
-        System.out.println(r + " in " + (System.currentTimeMillis() - start) + " ms");
+        System.out.println(r + " in " + time + " ms");
     }
 
     void run(int num, int repeats) {
